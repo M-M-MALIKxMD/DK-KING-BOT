@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: marco-malik-md
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OWNER_NUMBER
+        sync: false
+      - key: OWNER_NAME
+        sync: false
+      - key: BOT_NAME
+        value: MARCO MALIK MD
+      - key: PREFIX
+        value: "."
+      - key: SESSION_ID
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: AUTO_REACT
+        value: "true"
+      - key: REACT_MODE
+        value: "random"
+      - key: AUTO_STATUS_VIEW
+        value: "true"
+      - key: AUTO_STATUS_REPLY
+        value: "true"
+      - key: STATUS_REPLY_MESSAGE
+        value: "Seen Your Status 👀 By Marco Malik"
+      - key: ANTI_DELETE
+        value: "true"

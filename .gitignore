@@ -1,0 +1,16 @@
+node_modules/
+session/
+temp/
+data/
+.env
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+.env.local
+.env.production
+*.session
+auth_info/
+auth_info_baileys/
